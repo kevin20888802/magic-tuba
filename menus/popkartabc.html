@@ -1,0 +1,100 @@
+<html>
+    
+    <head>
+        <!-- 網頁大小設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <!-- 網頁插件匯入 -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">  
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">  
+        <script src="../js/bootstrap.min.js"></script>
+        <link href="../css/custom_css_0.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/custom_contents_0.js"></script>
+        <!-- 標籤列標題文字 -->
+        <title>跑跑卡丁車ABC飆速戰 - 神奇喇叭</title>
+        <link rel="icon" href="../img/icon_0.ico" type="image/x-icon"/>
+    </head>
+    
+    <body>
+        <!-- 導覽列 -->
+        <div id="nav-placeholder">
+            <script language="javascript">
+            create_Navbar("../");
+            </script>
+        </div>  
+        
+        <!-- 標題 -->
+        <div class="jumbotron" style="background-image: url(../../img/Menus/img_5.png); background-size: cover ; background-repeat: repeat-x;background-blend-mode:overlay">
+            <div class="container" >
+                <h1>跑跑卡丁車ABC飆速戰</h1>
+                <p>
+                    駕照考試學科，選擇題，90分及格。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 主程式 -->
+        <script type="text/javascript" src="js/popkartabc.js"></script>
+        
+        <div id="menu_0" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center"><h1>駕照考試</h1><br><br><br><br><button onclick="show_question(0)" style="font-size: 120px">開始考試！</button><br><br><br></div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_1" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                <h1 id="title_text">第i題</h1><br><br><p id="description_text">內容</p>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="option_list" id="option_0" value="0" checked>
+                  <label class="form-check-label" id="option_text_0" for="option_0">
+                    A
+                  </label>
+                    <br>
+                  <input class="form-check-input" type="radio" name="option_list" id="option_1" value="1">
+                  <label class="form-check-label" id="option_text_1" for="option_1">
+                    B
+                  </label>
+                    <br>
+                  <input class="form-check-input" type="radio" name="option_list" id="option_2" value="2">
+                  <label class="form-check-label" id="option_text_2" for="option_2">
+                    C
+                  </label>
+                    <br>
+                  <input class="form-check-input" type="radio" name="option_list" id="option_3" value="3">
+                  <label class="form-check-label" id="option_text_3" for="option_3">
+                    D
+                  </label>
+                </div>
+                <br><br><br>
+                <button onclick="check_answer()">確定</button>
+                <br><br><br>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+        
+        <div id="menu_2" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5"><h1 id="result_title"></h1><p id="result_description"></p></div>
+                <div class="col-lg-5"></div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        <!-- 底列 -->
+        <div id="footer_container"></div>
+        <script language="javascript">
+            create_Footer("../");
+        </script>
+    </body>
+    
+</html>

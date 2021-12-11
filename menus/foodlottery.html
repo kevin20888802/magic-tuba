@@ -1,0 +1,116 @@
+<html>
+    
+    <head>
+        <!-- 網頁大小設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <!-- 網頁插件匯入 -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">  
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">  
+        <script src="../js/bootstrap.min.js"></script>
+        <link href="../css/custom_css_0.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/custom_contents_0.js"></script>
+        <!-- 標籤列標題文字 -->
+        <title>美食小樂透 - 神奇喇叭</title>
+        <link rel="icon" href="../img/icon_0.ico" type="image/x-icon" / >
+    </head>
+        
+    <body>
+        <!-- 導覽列 -->
+        <div id="nav-placeholder">
+            <script language="javascript">
+            create_Navbar("../");
+            </script>
+        </div>   
+        
+        <!-- 標題 -->
+        <div class="jumbotron" style="background-image: url(../../img/Menus/img_5.png); background-size: cover ; background-repeat: repeat-x;background-blend-mode:overlay">
+            <div class="container" >
+                <h1>美食小樂透</h1>
+                <p>
+                    選擇店家，幫你決定午餐吃哪間。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 主程式 -->
+        <script type="text/javascript" src="js/foodlottery.js"></script>
+        
+        <div id="menu_0" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                    <select name="shop_list" id="shop_list" size="20" class="custom-select" style="width:80%" multiple>
+                    </select>
+                    <br><br><br><br>
+                    <label for="add_option">增加選項</label><br>
+                    <input type="text" id="add_option" name="add_option" style="width:80%"><br><br>
+                    <button onclick="add_option_btn()" style="width:20%">增加</button>
+                    <br><br>
+                </div>
+                <div class="col-lg-2">
+                    <br>
+                    <br>
+                    <button onclick="add_selects()">增加選擇 →→→</button>
+                    <br>
+                    <br>
+                    <button onclick="remove_selects()">←←← 取消選擇</button>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-lg-4">
+                    <select name="result_list" id="result_list" size="20" class="custom-select" style="width:80%" multiple>
+                    </select>
+                    <br><br><br><br><br><br><br><br>
+                    <button id="confirm_btn" onclick="confirm_show()" style="width:40%">確認</button>
+                    <br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        <div id="menu_1" class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <h1>已選擇店家：</h1>
+                    <p id="select_confirm_list"></p>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <button onclick="show_menu(0)" style="width:40%">返回</button>
+                </div>
+                <div class="col-lg-5">
+                    <button onclick="show_result()" style="width:40%">確定</button>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <br><br><br><br>
+        </div>
+        <div id="menu_2" class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10">
+                    <h1 id="result_text"></h1>
+                    <p>
+                        你選擇到的是這家店，是時候開吃了。
+                    </p>
+                    <br><br><br>
+                    <button onclick="show_menu(0)" style="width:10%">確定</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <!-- 底列 -->
+        <div id="footer_container"></div>
+        <script language="javascript">
+            create_Footer("../");
+        </script>
+    </body>
+</html>

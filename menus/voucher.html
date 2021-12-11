@@ -1,0 +1,109 @@
+<html>
+
+    <head>
+        <!-- 網頁大小設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <!-- 網頁插件匯入 -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">  
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">  
+        <script src="../js/bootstrap.min.js"></script>
+        <link href="../css/custom_css_0.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/custom_contents_0.js"></script>
+        <!-- 標籤列標題文字 -->
+        <title>只是個普通的對發票系統 - 神奇喇叭</title>
+        <link rel="icon" href="../img/icon_0.ico" type="image/x-icon"/>
+    </head>
+    
+    <body>
+        <!-- 導覽列 -->
+        <div id="nav-placeholder">
+            <script language="javascript">
+            create_Navbar("../");
+            </script>
+        </div>  
+        
+        <!-- 標題 -->
+        <div class="jumbotron" style="background-image: url(../../img/Menus/img_5.png); background-size: cover ; background-repeat: repeat-x;background-blend-mode:overlay">
+            <div class="container" >
+                <h1>只是個普通的對發票系統</h1>
+                <p>
+                    輸入號碼，確認有無現金。<br>
+                    SHOW ME THE MONEY！
+                </p>
+            </div>
+        </div>
+        
+        
+        <!-- 主程式 -->
+        <script type="text/javascript" src="js/voucher.js"></script>
+        
+        <div id="menu_0" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <h1 id="result_text">對獎結果：</h1>
+                    <br><br><br><br><br><br><br><br>
+                    <label for="add_option">發票號碼</label><br>
+                    <input type="text" id="inp_num" name="inp_num" style="width:80%"><br><br>
+                    <button onclick="check_reward()" style="width:20%">確認</button>
+                    <br><br>
+                </div>
+                <div class="col-lg-3">
+                    <div class="panel panel-primary">
+                      <div class="panel-body">特別獎</div>
+                      <div class="panel-footer"><h1 id="reward_num_0">00000000</h1><br>同期統一發票收執聯8位數號碼與特別獎號碼相同者獎金1,000萬元</div>
+                    </div>
+                    <div class="panel panel-primary">
+                      <div class="panel-body">特獎</div>
+                      <div class="panel-footer"><h1 id="reward_num_1">00000000</h1><br>同期統一發票收執聯8位數號碼與特獎號碼相同者獎金200萬元</div>
+                    </div>
+                    <div class="panel panel-primary">
+                      <div class="panel-body">頭獎</div>
+                      <div class="panel-footer"><h1 id="reward_num_2">00000000</h1><br>同期統一發票收執聯8位數號碼與頭獎號碼相同者獎金20萬元</div>
+                    </div>
+                    <div class="panel panel-primary">
+                      <div class="panel-body">增開六獎</div>
+                      <div class="panel-footer"><h1 id="reward_num_3">000</h1><br>同期統一發票收執聯末3位數號碼與增開六獎號碼相同者各得獎金2百元</div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="panel panel-primary">
+                      <div class="panel-body">二獎</div>
+                      <div class="panel-footer">同期統一發票收執聯末7 位數號碼與頭獎中獎號碼末7 位相同者各得獎金4萬元</div>
+                    </div>
+                    <div class="panel panel-primary">
+                      <div class="panel-body">三獎</div>
+                      <div class="panel-footer">同期統一發票收執聯末6 位數號碼與頭獎中獎號碼末6 位相同者各得獎金1萬元</div>
+                    </div>
+                    <div class="panel panel-primary">
+                      <div class="panel-body">四獎</div>
+                      <div class="panel-footer">同期統一發票收執聯末5 位數號碼與頭獎中獎號碼末5 位相同者各得獎金4千元</div>
+                    </div>
+                    <div class="panel panel-primary">
+                      <div class="panel-body">五獎</div>
+                      <div class="panel-footer">同期統一發票收執聯末4 位數號碼與頭獎中獎號碼末4 位相同者各得獎金1千元</div>
+                    </div>
+                    <div class="panel panel-primary">
+                      <div class="panel-body">六獎</div>
+                      <div class="panel-footer">同期統一發票收執聯末3 位數號碼與 頭獎中獎號碼末3 位相同者各得獎金2百元</div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+            <div class="row align-items-center">
+                <br><br><br><br>
+                <div class="col-lg-12"><h1>號碼來源：<a href="http://invoice.etax.nat.gov.tw/index.html">發票網站</a></h1></div>
+            </div>
+        </div>
+        
+        <!-- 底列 -->
+        <div id="footer_container"></div>
+        <script language="javascript">
+            create_Footer("../");
+        </script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,212 @@
+<html>
+    
+    <head>
+        <!-- 網頁大小設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <!-- 網頁插件匯入 -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">  
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">  
+        <script src="../js/bootstrap.min.js"></script>
+        <link href="../css/custom_css_0.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/custom_contents_0.js"></script>
+        <!-- 標籤列標題文字 -->
+        <title>搶老婆大作戰 - 神奇喇叭</title>
+        <link rel="icon" href="../img/icon_0.ico" type="image/x-icon"/>
+    </head>
+    
+    <body>
+        <!-- 導覽列 -->
+        <div id="nav-placeholder">
+            <script language="javascript">
+            create_Navbar("../");
+            </script>
+        </div>  
+        
+        <!-- 標題 -->
+        <div class="jumbotron" style="background-image: url(../../img/Menus/img_5.png); background-size: cover ; background-repeat: repeat-x;background-blend-mode:overlay">
+            <div class="container" >
+                <h1>搶老婆大作戰</h1>
+                <p>
+                    闖關冒險
+                </p>
+            </div>
+        </div>
+        
+        <!-- 主程式 -->
+        <script type="text/javascript" src="js/wifewar.js"></script>
+        
+        <div id="menu_0" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>庫巴魔王要從馬力歐身邊搶走公主，途中會遇到三個難關。請幫助他的偉大行動。</h1>
+                    <br><br><br><br>
+                    <button onclick="level_one_show()" style="font-size: 120px">開始！</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_1" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>失敗！一定是速度不夠快。</h1>
+                    <br><br><br><br>
+                    <button onclick="show_menu(0)" style="font-size: 120px">重新開始</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_8" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>勝利！<br>庫巴魔王成功地學會了雙刀流，突破第74關，擊敗閃耀魔眼。然後在馬力歐身邊強暴了他還有他老婆。</h1>
+                    <br><br><br><br>
+                    <button onclick="show_menu(0)" style="font-size: 120px">重新開始</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_2" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>第一關 - 詩詞背誦</h1>
+                    <p>將從以下詩詞中選出一首詩，請一字一個標點符號不漏的背誦出來。</p>
+                    <br><br><br><br>
+                    <p id="poets_text"></p>
+                    <button onclick="level_one_enter()" style="font-size: 120px">開始！</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_3" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>第一關 - 詩詞背誦</h1>
+                    <p id="poets_get_title"></p>
+                    <br><br><br><br>
+                    <label for="answer_0">請輸入答案</label><br>
+                    <input type="text" id="answer_0" name="answer_0" style="width:80%"><br><br>
+                    <button onclick="level_one_confirm()" style="width:20%">確定</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_4" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>第二關 - 猜數字</h1>
+                    <p>請用讀心術猜出派大星心裡現在想的數字（0~100），不然的話魔魟就會癢死。你有10次機會。</p>
+                    <br><br><br><br><br>
+                    <button onclick="level_two_enter()" style="font-size: 120px">開始！</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_5" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>第二關 - 猜數字</h1>
+                    <p id="level_two_live_text"></p>
+                    <br><br><br><br>
+                    <label for="answer_1">請輸入答案</label><br>
+                    <input type="text" id="answer_1" name="answer_1" style="width:80%"><br><br>
+                    <button onclick="level_two_confirm()" style="width:20%">確定</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+                
+        <div id="menu_6" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>第三關 - 資訊管理概論</h1>
+                    <p>請詳讀以下資訊。</p>
+                    <p>[1] ISO　國際標準組織的起源地來自瑞士。</p>
+                    <p>[2] 大數據6V，大量Volume、多樣Variety、即時Velocity、準確Veracity、連結Valence、價值Value。</p>
+                    <p>[3] 資料探勘四行動，關聯、序列、分類、群集。</p>
+                    <p>[4] 知識管理的目的，不斷地增加知識，像滾雪球一樣。</p>
+                    <p>[5] 知識管理的定義，知識作為資源，最佳化規劃運用，不斷增加知識，得到最大利益。</p>
+                    <p>[6] 機器學習的定義，自動找出規則的演算法。</p>
+                    <p>[7] 深度學習的定義，隱藏層很多的類神經網路。</p>
+                    <br><br><br><br><br>
+                    <button onclick="level_three_enter()" style="font-size: 120px">開始！</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_7" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10" style="text-align: center">
+                    <h1>第三關 - 資訊管理概論</h1>
+                    <h1 id="title_text">第i題</h1><br><br><p id="description_text">內容</p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="option_list" id="option_0" value="0" checked>
+                      <label class="form-check-label" id="option_text_0" for="option_0">
+                        A
+                      </label>
+                        <br>
+                      <input class="form-check-input" type="radio" name="option_list" id="option_1" value="1">
+                      <label class="form-check-label" id="option_text_1" for="option_1">
+                        B
+                      </label>
+                        <br>
+                      <input class="form-check-input" type="radio" name="option_list" id="option_2" value="2">
+                      <label class="form-check-label" id="option_text_2" for="option_2">
+                        C
+                      </label>
+                        <br>
+                      <input class="form-check-input" type="radio" name="option_list" id="option_3" value="3">
+                      <label class="form-check-label" id="option_text_3" for="option_3">
+                        D
+                      </label>
+                    </div>
+                    <br><br><br>
+                    <button onclick="check_answer()">確定</button>
+                    <br><br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        <!-- 底列 -->
+        <div id="footer_container"></div>
+        <script language="javascript">
+            create_Footer("../");
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,80 @@
+<html>
+    
+    <head>
+        <!-- 網頁大小設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <!-- 網頁插件匯入 -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <link href="css/bootstrap.min.css" rel="stylesheet">  
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet">  
+        <script src="js/bootstrap.min.js"></script>
+        <link href="css/custom_css_0.css" rel="stylesheet">
+        <script type="text/javascript" src="js/custom_contents_0.js"></script>
+        <!-- 標籤列標題文字 -->
+        <title>首頁 - 神奇喇叭</title>
+        <link rel="icon" href="img/icon_0.ico" type="image/x-icon" / >
+    </head>
+    
+    <body>
+        <!-- 導覽列 -->
+        <div id="nav-placeholder">
+            <script language="javascript">
+            create_Navbar("");
+            </script>
+        </div>   
+        
+        <!-- 輪播 -->
+        <div id="carousel_0" class="carousel slide">
+            <!-- 輪播 - 下方控制按鈕 -->
+            <div class="carousel-caption">
+                <img src="img/icon_0.png" width="40%" style="margin-left:0%; margin-right:0%">
+            </div>
+            <ol class="carousel-indicators" id="carousel_0_indicator">  
+            </ol>
+            <script>
+                let _writeContent = "";
+                for(i = 0 ; i <= 3; i++)
+                {
+                    let _thisSlide = "";
+                    _thisSlide += "<li data-target=\"#carousel_0\" data-slide-to=\"" + i.toString() + "\"";
+                    if(i == 0)
+                    {
+                        _thisSlide += "class=\"active\"";
+                    }
+                    _thisSlide += "></li>";
+                    _writeContent += _thisSlide;
+                }
+                $('#carousel_0_indicator').append(_writeContent);
+            </script>
+            <!-- 輪播 - 圖片 -->
+            <div class="carousel-inner">
+                <div class="carousel-caption">
+                </div>
+                <script>
+                    for(i = 0 ; i <= 3; i++)
+                    {
+                        let _thisPic = "<div class=\"";
+                        if(i == 0)
+                        {
+                            _thisPic += "item active";
+                        }
+                        else
+                        {
+                            _thisPic += "item";        
+                        }
+                        _thisPic += "\"><img src=\"img/Home/main_" + i.toString() + ".png\" width=\"100%\"> </div>"
+                        document.write(_thisPic);
+                    }
+                </script> 
+            </div>      
+            <!-- 輪播 - 左右控制按鈕 -->
+            <a class="carousel-control left" href="#carousel_0" data-slide="prev"><img style="left: 20px;top: -50%;transform: translateY(200%);" class="img-responsive" src="img/LeftArrow.png"></a>
+            <a class="carousel-control right" href="#carousel_0" data-slide="next"><img style="left: 20px;top: -50%;transform: translateY(200%);" class="img-responsive" src="img/RightArrow.png"></a>
+        </div>
+         <!-- 底列 -->
+        <div id="footer_container"></div>
+        <script language="javascript">
+            create_Footer("");
+        </script>
+    </body>
+</html>

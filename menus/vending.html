@@ -1,0 +1,159 @@
+<html>
+    
+    <head>
+        <!-- 網頁大小設定 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <!-- 網頁插件匯入 -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">  
+        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">  
+        <script src="../js/bootstrap.min.js"></script>
+        <link href="../css/custom_css_0.css" rel="stylesheet">
+        <script type="text/javascript" src="../js/custom_contents_0.js"></script>
+        <!-- 標籤列標題文字 -->
+        <title>學姊的販賣機 - 神奇喇叭</title>
+        <link rel="icon" href="../img/icon_0.ico" type="image/x-icon"/>
+    </head>
+    
+    <body>
+        <!-- 導覽列 -->
+        <div id="nav-placeholder">
+            <script language="javascript">
+            create_Navbar("../");
+            </script>
+        </div>   
+        
+        <!-- 標題 -->
+        <div class="jumbotron" style="background-image: url(../../img/Menus/img_5.png); background-size: cover ; background-repeat: repeat-x;background-blend-mode:overlay">
+            <div class="container" >
+                <h1>學姊的販賣機</h1>
+                <p>
+                    買飲料解渴。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 主程式 -->
+        <script type="text/javascript" src="js/vending.js"></script>
+        <div id="menu_0" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="../img/vending/item_0.jpg" alt="可口可樂" style="width:300px; height: 300px">
+                                <div class="caption">
+                                <h2 id="cost_0">$：000</h2>
+                                <p>可口可樂</p>
+                                <button id="buybtn_0" onclick="buy_item(0)" class="btn btn-primary" style="width: 40%">購買</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="../img/vending/item_1.jpg" alt="雪碧" style="width:300px; height: 300px">
+                                <div class="caption">
+                                <h2 id="cost_1">$：000</h2>
+                                <p>雪碧</p>
+                                <button id="buybtn_1" onclick="buy_item(1)" class="btn btn-primary" style="width: 40%">購買</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="../img/vending/item_2.jpg" alt="百事可樂" style="width:300px; height: 300px">
+                                <div class="caption">
+                                <h2 id="cost_2">$：000</h2>
+                                <p>百事可樂</p>
+                                <button id="buybtn_2" onclick="buy_item(2)" class="btn btn-primary" style="width: 40%">購買</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="../img/vending/item_3.jpg" alt="舒跑" style="width:300px; height: 300px">
+                                <div class="caption">
+                                <h2 id="cost_3">$：000</h2>
+                                <p>舒跑</p>
+                                <button id="buybtn_3" onclick="buy_item(3)" class="btn btn-primary" style="width: 40%">購買</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="../img/vending/item_4.jpg" alt="麥香奶茶" style="width:300px; height: 300px">
+                                <div class="caption">
+                                <h2 id="cost_4">$：000</h2>
+                                <p>麥香奶茶</p>
+                                <button id="buybtn_4" onclick="buy_item(4)" class="btn btn-primary" style="width: 40%">購買</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="thumbnail">
+                                <img src="../img/vending/item_5.jpg" alt="黑松沙士" style="width:300px; height: 300px">
+                                <div class="caption">
+                                <h2 id="cost_5">$：000</h2>
+                                <p>黑松沙士</p>
+                                <button id="buybtn_5" onclick="buy_item(5)" class="btn btn-primary" style="width: 40%">購買</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h1 id="nowcoin_text">目前硬幣數量：0</h1>
+                    <br><br><br><br>
+                    <label for="add_option">投入硬幣數量</label><br>
+                    <input type="number" id="add_coin" name="add_coin" style="width:80%"><br><br>
+                    <button onclick="add_coin()" style="width:20%">投入</button>
+                    <br><br>
+                    <button onclick="clear_coin()" style="width:20%">退幣</button>
+                    <br><br>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        
+        <div id="menu_1" class="container-fluid">
+            <br><br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7">
+                    <h1>感謝您的購買</h1>
+                    <div class="row">
+                        <div class="col-lg-8"><img src="../img/vending/item_5.jpg" id="buy_item_img" style="width:300px; height: 300px"></div>
+                        <div class="col-lg-4">
+                            <h2 id="buy_item_title">物品名稱</h2><br><br><br><br><br><br>
+                            <p>感謝您的購買，以下是您的發票號碼。</p><br><br>
+                            <h4 id="voucher_text">AA-00000000</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-1"></div>
+            </div>
+            <br><br><br>
+            <div class="row align-items-center">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                <button onclick="show_menu(0)" style="width:20%">確定</button>
+                </div>
+                <div class="col-lg-5"></div>
+                <div class="col-lg-1"></div>
+            </div>
+            <br><br><br>
+        </div>
+        
+        <!-- 底列 -->
+        <div id="footer_container"></div>
+        <script language="javascript">
+            create_Footer("../");
+        </script>
+    </body>
+    
+</html>

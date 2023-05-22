@@ -21,9 +21,9 @@ function get_reward_nums()
 {
     // 解決CORS錯誤的API網址
     // 在目標網站前面加
-    let cors_api = "https://cors-anywhere.herokuapp.com/";
+    let cors_api = "http://cors.io/";
     // 發票網站
-    let voucher_url = "http://invoice.etax.nat.gov.tw/";
+    let voucher_url = "https://invoice.etax.nat.gov.tw/";
     
     // 網頁請求
     var get_process = new XMLHttpRequest();
